@@ -49,6 +49,27 @@ header nav a {
     font-weight: bold;
     font-size: 1.5vw;
 }
+
+@media (max-width:450px) {
+    header nav a {
+        font-size: 3vw;
+    }
+    header h1 a {
+    font-size: 5vw;
+    }
+    .count-1-title {
+        height: 600px;
+    }
+    .count-1-title .count-1-img-p p {
+        font-size: 2.5vw !important;
+    }
+    .count-1-title .count-1-img-p h2 {
+        font-size: 3vw !important;
+    }
+    .count-1-title .count-1-img-p img {
+        border-radius: 30px !important;
+    }
+}
 /* HEADER STYLE END */
 
 
