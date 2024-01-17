@@ -175,6 +175,7 @@
         text-align: center;
         color: var(--fontColor);
         margin: 5% !important;
+        font-size: 16px;
     }
     
     .count-2-cards P {
@@ -183,11 +184,6 @@
     }
     
     .count-2-cards P a {
-        line-height: 1.1;
-        color: rgb(255, 255, 255);
-        background-color: black;
-        text-decoration: none;
-        /* padding: 5px; */
         border-radius: 10px;
         font-size: 10px !important;
     }
@@ -201,14 +197,6 @@
         border-radius: 20px;
     }
     
-    .count-2-cards h2 {
-        grid-column: 1/10;
-        text-align: center;
-        color: rgb(66, 19, 19);
-        position: relative;
-        top: 0px;
-    
-    }
     
     .count-2-cards h3 {
         text-align: center;
@@ -222,11 +210,6 @@
     }
     
     .count-2-cards P a {
-        line-height: 1.1;
-        color: rgb(255, 255, 255);
-        background-color: black;
-        text-decoration: none;
-        /* padding: 5px; */
         border-radius: 10px;
         font-size: 10px !important;
     }
@@ -252,6 +235,7 @@
         text-align: center;
         color: var(--fontColor);
         margin: 5% !important;
+        font-size: 16px;
     }
     
     .count-2-cards P {
@@ -260,10 +244,6 @@
     }
     
     .count-2-cards P a {
-        line-height: 1.1;
-        color: rgb(255, 255, 255);
-        background-color: black;
-        text-decoration: none;
         /* padding: 5px; */
         border-radius: 10px;
         font-size: 10px !important;
