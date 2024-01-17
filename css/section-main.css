@@ -112,10 +112,10 @@
 .count-2-cards h2 {
     grid-column: 1/10;
     text-align: center;
-    color: black;
+    color: white;
     position: relative;
     top: -10px;
-
+    font-size: 17px;
 }
 
 .count-2-cards h3 {
@@ -133,9 +133,9 @@
     color: rgb(255, 255, 255);
     background-color: black;
     text-decoration: none;
-    padding: 5px;
+    padding: 1px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 15px !important;
 }
 
 .count-2-cards .card-1 {
@@ -174,7 +174,6 @@
         color: rgb(66, 19, 19);
         position: relative;
         top: 0px;
-    
     }
     
     .count-2-cards h3 {
