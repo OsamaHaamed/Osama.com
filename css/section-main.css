@@ -147,7 +147,6 @@
 
 .card:hover {
     transform: scale(1.4);
-    animation-play-state: paused;
 }
 
 @keyframes cards {
