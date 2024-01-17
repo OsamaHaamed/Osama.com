@@ -47,8 +47,9 @@ header nav a {
     text-decoration: none;
     color: var(--fontColor);
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
+/* HEADER STYLE END */
 
 @media (max-width:450px) {
     header nav a {
@@ -70,7 +71,6 @@ header nav a {
         border-radius: 30px !important;
     }
 }
-/* HEADER STYLE END */
 
 
 
