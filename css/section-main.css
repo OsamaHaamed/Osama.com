@@ -95,6 +95,12 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.568);
     border-radius: 15px;
+    animation-name: cards;
+    animation-duration: 1s;
+    animation-delay: ;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .card img {
@@ -106,16 +112,31 @@
 .count-2-cards h2 {
     grid-column: 1/10;
     text-align: center;
-    color: var(--fontColor);
+    color: black;
+    position: relative;
+    top: -10px;
+
 }
 
 .count-2-cards h3 {
     text-align: center;
     color: var(--fontColor);
     margin: 5%;
-    /* border-bottom: 5px solid black; */
 }
 
+.count-2-cards P {
+    line-height: 1.1;
+}
+
+.count-2-cards P a {
+    line-height: 1.4;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
 
 .count-2-cards .card-1 {
     grid-column: span 3;
@@ -129,6 +150,131 @@
     grid-column: span 3;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    animation-play-state: paused;
+}
+
+@keyframes cards {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 800px) {
+    .card img {
+        width: 18vw;
+        height: 50%;
+        border-radius: 20px;
+    }
+    
+    .count-2-cards h2 {
+        grid-column: 1/10;
+        text-align: center;
+        color: rgb(66, 19, 19);
+        position: relative;
+        top: 0px;
+    
+    }
+    
+    .count-2-cards h3 {
+        text-align: center;
+        color: var(--fontColor);
+        margin: 5% !important;
+    }
+    
+    .count-2-cards P {
+        line-height: 1.1;
+        font-size: 1.5vw;
+    }
+    
+    .count-2-cards P a {
+        line-height: 1.1;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        text-decoration: none;
+        /* padding: 5px; */
+        border-radius: 10px;
+        font-size: 10px !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .card img {
+        width: 18vw;
+        height: 50%;
+        border-radius: 20px;
+    }
+    
+    .count-2-cards h2 {
+        grid-column: 1/10;
+        text-align: center;
+        color: rgb(66, 19, 19);
+        position: relative;
+        top: 0px;
+    
+    }
+    
+    .count-2-cards h3 {
+        text-align: center;
+        color: var(--fontColor);
+        margin: 5% !important;
+    }
+    
+    .count-2-cards P {
+        line-height: 1.1;
+        font-size: 1.5vw;
+    }
+    
+    .count-2-cards P a {
+        line-height: 1.1;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        text-decoration: none;
+        /* padding: 5px; */
+        border-radius: 10px;
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .card img {
+        width: 18vw;
+        height: 50%;
+        border-radius: 20px;
+    }
+    
+    .count-2-cards h2 {
+        grid-column: 1/10;
+        text-align: center;
+        color: rgb(66, 19, 19);
+        position: relative;
+        top: 0px;
+    
+    }
+    
+    .count-2-cards h3 {
+        text-align: center;
+        color: var(--fontColor);
+        margin: 5% !important;
+    }
+    
+    .count-2-cards P {
+        line-height: 1.1;
+        font-size: 1.5vw;
+    }
+    
+    .count-2-cards P a {
+        line-height: 1.1;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        text-decoration: none;
+        /* padding: 5px; */
+        border-radius: 10px;
+        font-size: 10px !important;
+    }
+}
 /* COUNT-2-CARDS END */
 
 
