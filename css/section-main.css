@@ -68,7 +68,7 @@
 .animation {
     animation-name: osama;
     animation-duration: 1.5s;
-    animation-timing-function: ease-out  ;
+    animation-timing-function: ease-out ;
     animation-direction: reverse;
     transform-origin: center left ;
     box-shadow: 1px 1px 5px inset;
