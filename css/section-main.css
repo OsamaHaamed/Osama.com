@@ -73,6 +73,10 @@
     animation-direction: reverse;
     transform-origin: center left ;
     box-shadow: 1px 1px 5px inset;
+    -webkit-transform: rotatey(100deg);
+    -moz-transform: rotatey(100deg);
+    -ms-transform: rotatey(100deg);
+    -o-transform: rotatey(100deg);
 }
 @keyframes osama {
 
