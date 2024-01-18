@@ -46,7 +46,7 @@ header nav {
 header h1 a {
     text-decoration: none;
     color: var(--fontColor);
-    font-size: 8vw;
+    font-size: 25px;
 }
 
 header nav a {
@@ -66,6 +66,7 @@ header nav a {
 .section-main {
     grid-column: span 10;
     grid-row: 2/3;
+    padding: 20%;
     background-image: url(../images/محكمه.jfif);
     background-repeat: no-repeat;
     background-position: center;
@@ -74,8 +75,7 @@ header nav a {
 }
 .parent-box {
     background-color: rgba(0, 0, 0, 0.719);
-    /* display: flex;
-    justify-content: center; */
+    padding: 6%;
     
 }
 
@@ -172,12 +172,14 @@ footer {
     }
     .section-main {
         margin: 100px auto;
+        padding: 0px !important;
     }
 }
 
 @media (max-width: 350px) {
     .section-main {
         margin: 100px auto;
+        padding: 0px !important;
     }
     .section-main .parent-box {
         padding: 5%;
