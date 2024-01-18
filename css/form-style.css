@@ -78,7 +78,9 @@
     color: #fff;
     border: none;
     outline: none;
-    background: #0cc0df;
+    background: #441300;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black inset;
     cursor: pointer;
     font-size: 16px;
 }
