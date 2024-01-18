@@ -51,7 +51,7 @@ header nav a {
     text-decoration: none;
     color: var(--fontColor);
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 /* HEADER STYLE END */
 
@@ -75,5 +75,6 @@ header nav a {
         border-radius: 30px !important;
     }
 }
+
 
 
