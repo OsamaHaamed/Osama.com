@@ -74,7 +74,7 @@ header nav a {
 .contentMain {
     background-image: url(../images/court-4.jfif);
     background-position: center;
-    background-size: 72% 78.5%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 10%;
 }
@@ -84,7 +84,7 @@ header nav a {
     grid-template-rows: auto auto;
     gap: 1vw;
     padding: 10%;
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: rgba(0, 0, 0, 0.616);
     border-radius: 10px;
 }
 .content h3  {
