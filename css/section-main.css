@@ -23,6 +23,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    overflow: hidden;
 }
 .count-1-title .count-1-img-p {
     background-color: rgba(0, 0, 0, 0.493);
@@ -59,11 +60,29 @@
 .count-1-title .count-1-img-p img {
     grid-column: 5/span 5;
     width: 40vw;
-    padding: 10%;
+    padding: 5%;
     grid-row: 2/3;
-    border-radius: 100px;
+    border-radius: 80px;
 }
 
+.animation {
+    animation-name: osama;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out  ;
+    animation-direction: reverse;
+    transform-origin: center left ;
+    box-shadow: 1px 1px 5px inset;
+}
+@keyframes osama {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotatey(100deg);
+    }
+}
 
 /* COUNT-1-TITLE START */
 
@@ -87,6 +106,7 @@
 
 .card {
     margin: 10%;
+    padding: 5%;
     overflow: hidden;
     box-shadow: 2px 2px 2px black, -2px -2px 2px black;
     display: flex;
@@ -106,7 +126,7 @@
 .card img {
     width: 18vw;
     height: 70%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .count-2-cards h2 {
@@ -115,7 +135,8 @@
     color: var(--fontColor);
     position: relative;
     top: -10px;
-    font-size: 20px;
+    font-size: 1.9vw;
+    font-weight: bold;
 }
 
  .count-2-cards h3 {
@@ -126,11 +147,6 @@
 
 .count-2-cards P {
     line-height: 1.1;
-}
-
-.count-2-cards P a {
-    border-radius: 10px;
-    font-size: 15px !important;
 }
 
 .count-2-cards .card-1 {
@@ -145,10 +161,23 @@
     grid-column: span 3;
 }
 
+.count-2-cards .card h3 a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: #ac5007;
+    padding: 5px;   
+    border-radius: 3px;
+    font-size: 1.5vw;
+    box-shadow: 2px 2px 2px black inset;
+}
+
 .card:hover {
     transform: scale(1.5);
     animation-play-state: paused;
 }
+
+
 
 @keyframes cards {
     to {
@@ -179,10 +208,6 @@
         font-size: 1.5vw;
     }
     
-    .count-2-cards P a {
-        border-radius: 10px;
-        font-size: 10px !important;
-    }
 }
 
 
@@ -192,7 +217,6 @@
         height: 50%;
         border-radius: 10px;
     }
-    
     
     .count-2-cards h3 {
         text-align: center;
@@ -207,10 +231,6 @@
         font-size: 1.5vw;
     }
     
-    .count-2-cards P a {
-        border-radius: 10px;
-        font-size: 10px !important;
-    }
 }
 
 @media (max-width: 450px) {
@@ -218,9 +238,6 @@
         width: 18vw;
         height: 50%;
         border-radius: 5px;
-    }
-    .count-2-cards h2 {
-        font-size: 16px;
     }
     .count-2-cards h3 {
         text-align: center;
@@ -234,9 +251,6 @@
         font-size: 1.5vw;
     }
     
-    .count-2-cards P a {
-        font-size: 10px !important;
-    }
 }
 /* COUNT-2-CARDS END */
 
