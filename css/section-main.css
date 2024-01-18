@@ -68,15 +68,10 @@
 .animation {
     animation-name: osama;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
     animation-timing-function: ease-out  ;
     animation-direction: reverse;
     transform-origin: center left ;
     box-shadow: 1px 1px 5px inset;
-    -webkit-transform: rotatey(100deg);
-    -moz-transform: rotatey(100deg);
-    -ms-transform: rotatey(100deg);
-    -o-transform: rotatey(100deg);
 }
 @keyframes osama {
 
