@@ -17,7 +17,7 @@ body {
 .main {
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    grid-template-columns: 5% 1fr 5%;
+    grid-template-columns: 30px 1fr 5%;
 }
 
 
@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     position: fixed;
     width: 100%;
     color: var(--fontColor);
@@ -46,6 +46,7 @@ header nav {
 header h1 a {
     text-decoration: none;
     color: var(--fontColor);
+    font-size: 8vw;
 }
 
 header nav a {
@@ -65,7 +66,6 @@ header nav a {
 .section-main {
     grid-column: span 10;
     grid-row: 2/3;
-    padding: 10%;
     background-image: url(../images/محكمه.jfif);
     background-repeat: no-repeat;
     background-position: center;
@@ -89,7 +89,7 @@ header nav a {
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.404);
     border: 1px solid rgba(255, 255, 255, .5);
-    /* margin: 50px; */
+    margin-left: 50px !important;
 }
 .box .form
 {
@@ -161,4 +161,26 @@ footer {
     header {
         font-size: 16px !important;
     }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav a {
+
+        margin-left: 10px;
+    }
+    .section-main {
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .section-main {
+        margin: 100px auto;
+    }
+    .section-main .parent-box {
+        padding: 5%;
+    }
+
 }
