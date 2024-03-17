@@ -311,6 +311,12 @@ section .main-form .form form .inputbox span {
 section .main-form .form form .sub {
     padding: 1% 2%;
 }
+section .main-form .form form .send {
+       width: 100%;
+        display: flex;
+        justify-content: space-around;
+    aling-items: center;
+}
 /* Form End */
 
 /* Contact Start */
