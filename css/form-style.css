@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+body {
+    background-color: #894b04fb;
+}
+/* Header Start */
+header {
+    width: 100%;
+    background-color: #894b04fb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1 a { 
+    color: white;
+    text-decoration: none;
+}
+header .ul-large {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+}
+header .ul-large li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .main-list {
+    display: none;
+}
+header .main-list .list {
+    background-color: rgba(255, 255, 255, 0.697);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+header .main-list .list .option {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+header .main-list .list .ch {
+    width: 15px;
+}
+header .main-list .list:hover .ch {
+    width: 30px;
+    transition: 0.5s;
+}
+header .main-list .list:hover .ul-small {
+    display: block;
+}
+header .main-list .list .ul-small {
+    display: none;
+    background-color: #894b04fb;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+    list-style: none;
+    padding: 5%;
+}
+header .main-list .list .ul-small::before {
+    content: "";
+    width: 0;
+    border: 10px solid black;
+    border-color: transparent transparent black transparent ;
+    position: absolute;
+    top: -20px;
+    left: 20%;
+}
+header .main-list .list .ul-small li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header .main-list .list .ul-small li {
+    padding: 5%;
+}
+header .main-list .list .ul-small li:not(:last-child) {
+    border-bottom: 2px solid black;
+    }
+/* Media In header Start  */
+@media (max-width: 951px) {
+    header .ul-large {
+        display: none ;
+    }
+    header .main-list {
+        display: block;
+    }
+}
+/* Media In header End */
+/* Header End */
+
+/* Section Start */
+section {
+    width: 100%;
+    background-image: url(../images/محكمه.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+section .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.515);
+    padding: 10%;
+    border-radius: 20px;
+} 
+section .form h2 {
+    color: white;
+}
+section .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+section .form form .inputbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    color: white;
+} 
+section .form form .inputbox input {
+    padding:  2%;
+    background-color: rgba(0, 0, 0, 0.689);
+    outline: none;
+    border: none;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section .form form .send {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+section .form form .send .sub {
+    padding: 1% 5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Section End */
+
+/* Footer Start */
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: white;
+}
+/* Footer End */
