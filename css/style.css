@@ -1,0 +1,373 @@
+body {
+    background-color: #603503;
+}
+* {
+    box-sizing: border-box;    
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+/* header start */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #894b04fb;
+    /* position: fixed; */
+    top: 0;
+}
+header .ul-large a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+header .ul-large {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+header .main-list {
+    display: none;
+}
+header .main-list .list {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.319);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+}
+header .main-list .list .option{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+header .main-list .list .ch{
+    width: 15px;
+}
+header .main-list .list:hover .ch {
+    width: 30px;
+    transition: 0.5s;
+}
+header .main-list .list:hover .ul-small {
+    display: block;
+}
+header .main-list .list .ul-small {
+    list-style: none;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    display: none;
+    background-color: #603503;
+}
+header .main-list .list .ul-small::before {
+    content: "";
+    border: 10px solid black;
+    border-color: transparent  transparent  black transparent;
+    position: absolute;
+    top: -20px;
+    left: 20%;
+}
+header .main-list .list .ul-small li {
+    width: 100%;
+    padding: 20px;
+}
+header .main-list .list .ul-small li:not(:last-child){
+    border-bottom: 2px solid black;
+}
+header .main-list .list .ul-small li .not {
+    border-color: transparent !important;
+}
+header .main-list .list .ul-small li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header .main-list .list .ul-small li a:active .ul-small {
+    display: none !important;
+}
+/* media in header start */
+@media (max-width: 951px) {
+    header .main-list {
+        display: block !important;
+    }
+    header .ul-large {
+        display: none;
+    }
+}
+/* media in header end */
+
+/* header end */
+
+/* About Satrt */
+section .about {
+    width: 100%;
+    background-image: url(../images/محكمه.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    animation-name: slid;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+section .about .all {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+section .about .all h1 {
+    padding: 50px 0 20px 0 ;
+    color: white;
+    border-bottom: 2px solid;
+}
+section .about .all .ph-p {
+    display: flex;
+    width: 100%;
+    padding: 10%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+section .about .all .ph-p img {
+    width: 200px;
+    border-radius: 20px;
+    border-radius: 125px;
+}
+section .about .all .ph-p p {
+    width: 100%;
+    line-height: 2;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    padding: 30px 30px 20px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+/* media in about start */
+@media (max-width: 951px) {
+    section .about .all .ph-p {
+        flex-direction: column-reverse;
+    }
+}
+/* media in about end */
+/* Animation in About Start */
+@keyframes slid {
+    0% {
+        background-image: url(../images/court-2.jpg);
+    }
+    25% {
+        background-image: url(../images/court-3.jpg);
+    }
+    50% {
+        background-image: url(../images/court-4.jfif);
+    }
+    75% {
+        background-image: url(../images/court.jpg);
+    }
+    100% {
+        background-image: url(../images/court-2.jpg);
+    }
+}
+/* Animation in About End */
+/* About End */
+
+/* Project Start */
+section .project {
+    width: 100%;
+    background-image: url(../images/مطرقه.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+section .project .all-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.186);
+    align-items: center;
+    justify-content: center;
+}
+
+section .project .all-2 h2 {
+    color: white;
+    background-color: #603503a1;
+    padding: 10px;
+    border-radius: 10px;
+}
+section .project .all-2 h3 a {
+    color: white;
+    text-decoration: none;
+    background-color: #603503;
+    padding: 10px;
+    border-radius: 5px;
+}
+section .project .all-2 .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.327);
+}
+section .project .all-2 .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.545);
+    padding: 20px 0px;
+    /* width: 60%; */
+    margin: 20px 0;
+    border-radius: 20px;
+}
+section .project .all-2 .cards .card img {
+    width: 200px;
+    height: 120px;
+    border-radius: 20px;
+}
+section .project .all-2 .cards .card p {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    
+}
+/* Media in Project Start */
+@media (max-width: 951px) {
+    section .project .all-2 .cards {
+        flex-direction: column;
+    }
+}
+/* Media in Project End */
+/* Project End */
+
+/* Form Start  */
+section .main-form {
+    width: 100%;
+    background-image: url(../images/court-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+section .main-form .form {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.526); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main-form .form h2 {
+    color: white;
+    background-color: #603503a1;
+    padding: 10px;
+    border-radius: 10px;
+}
+section .main-form .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.385);
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+section .main-form .form form .inputbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding: 2%;
+}
+section .main-form .form form .inputbox input {
+    padding: 1%;
+}
+section .main-form .form form .inputbox span {
+    color: white;
+    font-size: 100%;
+}
+section .main-form .form form .sub {
+    padding: 1% 2%;
+}
+/* Form End */
+
+/* Contact Start */
+section .contact {
+    width: 100%;
+    background-image: url(../images/court-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5%;
+}
+section .contact .all-4 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.152);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    border-radius: 20px;
+}
+section .contact .all-4 h2 {
+    color: white;
+    background-color: #603503a1;
+    padding: 10px;
+    border-radius: 10px;
+}
+section .contact .all-4 .icone-ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 10%;
+    border-radius: 20px;
+    gap: 30px;
+}
+/* Media In Contact Start */
+@media (max-width: 951px) {
+    section .contact .all-4 .icone-ul {
+        flex-direction: column;
+    }
+}
+/* Media In Contact End */
+/* Contact End */
+
+/* Footer  Start */
+footer {
+    width: 100%;
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .all-5 {
+    color: white;
+}
+/* Footer  End */
