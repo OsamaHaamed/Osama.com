@@ -159,7 +159,7 @@ section .about .all .ph-p {
     align-items: center;
     gap: 20px;
 }
-section .about .all .ph-p:hover p {
+section .about .all .ph-p:hover img {
     transform: rotateX(0deg);
 
 }
@@ -167,6 +167,9 @@ section .about .all .ph-p img {
     width: 250px;
     height:380px;
     border-radius: 5px;
+    transform: rotateX(90deg);
+    transform-origin: top right;
+    transition: transform 1s;
 }
 section .about .all .ph-p p {
     width: 250px;
@@ -176,9 +179,7 @@ section .about .all .ph-p p {
     padding: 10px;
     border-radius:5px;
     font-size: 16px;
-    transform: rotateX(90deg);
-    transform-origin: top right;
-    transition: transform 1s;
+    
 }
 
 /* media in about start */
