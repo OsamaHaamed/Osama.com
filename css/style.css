@@ -74,7 +74,8 @@ header .main-list .list .ul-small {
     gap: 30px;
     width: 100%;
     display: none;
-    background-color: #603503;
+    background-color: #603503a3;
+z-index: 222;
 }
 header .main-list .list .ul-small::before {
     content: "";
@@ -135,12 +136,20 @@ section .about .all {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0 0 0;
 }
 section .about .all h1 {
-    padding: 50px 0 20px 0 ;
+    padding: 2%;
     color: white;
-    border-bottom: 2px solid;
+    background-color: #000000a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 section .about .all .ph-p {
     display: flex;
@@ -149,22 +158,29 @@ section .about .all .ph-p {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+}
+section .about .all .ph-p:hover p {
+    transform: rotateX(0deg);
 
 }
 section .about .all .ph-p img {
-    width: 200px;
-    border-radius: 20px;
-    border-radius: 125px;
+    width: 250px;
+    height:380px;
+    border-radius: 5px;
 }
 section .about .all .ph-p p {
-    width: 100%;
+    width: 250px;
     line-height: 2;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0.864);
     color: white;
-    padding: 30px 30px 20px 30px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius:5px;
     font-size: 16px;
+    transform: rotateX(90deg);
+    transform-origin: top right;
+    transition: transform 1s;
 }
+
 /* media in about start */
 @media (max-width: 951px) {
     section .about .all .ph-p {
@@ -188,6 +204,27 @@ section .about .all .ph-p p {
     }
     100% {
         background-image: url(../images/court-2.jpg);
+    }
+}
+@keyframes h1 {
+    0% {
+        /* transform: translateX(10px); */
+    }
+    25% {
+       scale: 1.0.5;
+
+    }
+    50% {
+        transform: translatey(10px);
+
+    }
+    75% {
+        transform: translatey(15px);
+
+    }
+    100% {
+        transform: translatey(50px);
+
     }
 }
 /* Animation in About End */
@@ -226,26 +263,28 @@ section .project .all-2 h3 a {
 section .project .all-2 .cards {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.327);
+    gap: 100px;
+    /* background-color: rgba(0, 0, 0, 0.327); */
 }
 section .project .all-2 .cards .card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.545);
-    padding: 20px 0px;
-    /* width: 60%; */
+    background-color: rgba(0, 0, 0, 0.756);
+    padding: 0px 0px;
+    width: 250px;
     margin: 20px 0;
-    border-radius: 20px;
+    border-radius: 5px;
+    height: fit-content;
 }
 section .project .all-2 .cards .card img {
-    width: 200px;
-    height: 120px;
-    border-radius: 20px;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
 }
 section .project .all-2 .cards .card p {
     color: white;
@@ -312,10 +351,9 @@ section .main-form .form form .sub {
     padding: 1% 2%;
 }
 section .main-form .form form .send {
-       width: 100%;
-        display: flex;
-        justify-content: space-around;
-    aling-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 /* Form End */
 
@@ -330,7 +368,7 @@ section .contact {
 }
 section .contact .all-4 {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.152);
+    /* background-color: rgba(0, 0, 0, 0.152); */
     display: flex;
     flex-direction: column;
     justify-content: center;
