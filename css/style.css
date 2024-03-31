@@ -233,10 +233,12 @@ section .about .all .ph-p p {
 /* Project Start */
 section .project {
     width: 100%;
-    background-image: url(../images/مطرقه.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-image: url(../images/مطرقه.jpg); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 section .project .all-2 {
     width: 100%;
