@@ -367,7 +367,7 @@ section .contact {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 5%;
+    /* padding: 5%; */
 }
 section .contact .all-4 {
     width: 100%;
@@ -376,8 +376,8 @@ section .contact .all-4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10%;
-    border-radius: 20px;
+    /* padding: 10%; */
+    border-radius: 5px;
 }
 section .contact .all-4 h2 {
     color: white;
@@ -392,9 +392,9 @@ section .contact .all-4 .icone-ul {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.521);
-    padding: 10%;
-    border-radius: 20px;
-    gap: 30px;
+    padding: 5% 1%;
+    border-radius: 5px;
+    gap: 10px;
 }
 /* Media In Contact Start */
 @media (max-width: 951px) {
