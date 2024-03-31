@@ -161,7 +161,42 @@ section .about .all .ph-p {
 }
 section .about .all .ph-p:hover img {
     transform: rotateX(0deg);
-
+}
+section .about .all .ph-p:hover .style {
+    display: none;
+}
+.about .all .ph-p .image-about {
+    background-color: #6035038b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about .all .ph-p .image-about .style {
+    width: 0px;
+    height: 0px;
+    border: 20px solid black;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+    /* background-color: #000; */
+    animation-name: photo-1;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+.about .all .ph-p .image-about .change {
+    width: 0px;
+    height: 0px;
+    border: 20px solid black;
+    border-color: transparent transparent  rgb(255, 255, 255) transparent;
+    /* background-color: #000; */
+    animation-name: photo-2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 section .about .all .ph-p img {
     width: 250px;
@@ -179,7 +214,7 @@ section .about .all .ph-p p {
     padding: 10px;
     border-radius:5px;
     font-size: 16px;
-    
+    padding: 30px 10px ;
 }
 
 /* media in about start */
@@ -226,6 +261,29 @@ section .about .all .ph-p p {
     100% {
         transform: translatey(50px);
 
+    }
+    
+}
+@keyframes photo-1 {
+    0% {
+        transform: translatey(10px);
+    }       
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translatey(-30px);
+    }
+}
+@keyframes photo-2 {
+    0% {
+        transform: translatey(-10px);
+    }       
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translatey(30px);
     }
 }
 /* Animation in About End */
