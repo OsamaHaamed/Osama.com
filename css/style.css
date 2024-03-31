@@ -396,10 +396,13 @@ section .contact .all-4 .icone-ul {
     border-radius: 5px;
     gap: 10px;
 }
+section .contact .all-4 .icone-ul li a img {
+    width: 30px;
+}
 /* Media In Contact Start */
 @media (max-width: 951px) {
     section .contact .all-4 .icone-ul {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }
 /* Media In Contact End */
